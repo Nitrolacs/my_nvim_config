@@ -24,6 +24,9 @@ Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/ap/vim-css-color'
 Plug 'https://github.com/tc50cal/vim-terminal.git'
 
+Plug 'jiangmiao/auto-pairs'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -37,15 +40,11 @@ Plug 'mhartington/oceanic-next'  " colorscheme OceanicNext
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'ayu-theme/ayu-vim'
 
-" For JS/JSX
-Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
-
 call plug#end()
 
 " convenient work with NERDTree
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-y> :NERDTreeToggle<CR>
+inoremap <C-n> <Esc>:NERDTreeToggle<CR>
+nnoremap <C-n> <Esc>:NERDTreeToggle<CR>
 
 colorscheme gruvbox
 " colorscheme OceanicNext
